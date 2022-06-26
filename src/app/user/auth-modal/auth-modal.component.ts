@@ -11,6 +11,11 @@ export const authModalID = 'auth';
   styleUrls: ['./auth-modal.component.scss']
 })
 export class AuthModalComponent implements OnInit, OnDestroy {
+  modalTabs: string[] = [
+    'Login',
+    'Register',
+  ];
+
   constructor(private modalService: ModalService) { }
 
   ngOnInit(): void {
